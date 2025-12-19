@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: white;
-
+            margin-bottom: 1000px;
         }
 
         nav {
@@ -62,6 +62,68 @@
             padding: 50px;
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
+            margin-bottom: 20px;
+        }
+        .airpods-header, .airpods-statement {
+            margin: 0;
+            padding:0;
+        }
+        .airpods-header {
+            font-weight : 600;
+            font-size : 46px;
+            opacity: 0.85;
+        }
+        .airpods-statement {
+            font-weight: 400;
+            font-size : 23px;
+            opacity : 0.75;
+            margin: 10px 0 20px 0;
+        }
+        .button-group {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            
+        }
+        .button-group a{
+            padding :12px 24px;
+            font-size :16px;
+            font-weight : 500;
+            text-decoration : none;
+            border-radius : 20px;
+            
+            
+        }
+        .learn-more-btn {
+            background-color : rgb(0, 113, 227);
+            color : #f5f5f7;
+            
+        }
+        .shop-btn {
+            background-color : #f5f5f7;
+            color : rgb(0, 113, 227);
+            border:1px solid rgb(0, 113, 227);
+        }
+        
+        .box-model2 {
+            text-align: center;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap : wrap;
+            margin-top: 20px;
+
+        }
+        .flex-item {
+            background-color: #f8f8f8;
+            text-align: center;
+            min-width: 200px;
+            flex-grow :1;
         }
     </style>
 </head>
@@ -94,9 +156,51 @@
         <h3>Say hello to the latest generation of iPhone.</h3>
 
         <div class="button-group">
-            <a href="#">Learn more ></a>
-            <a href="#">Shop iPhone ></a>
+            <a class="learn-more-btn" href="#">Learn more </a>
+            <a class="shop-btn" href="#">Shop iPhone </a>
         </div>
+        <img src="./iphone1.png" alt="iPhone Image" width="300px">
+    </div>
+
+    <div class="box-model2">
+        <h1 class="airpods-header">AirPods Pro 3</h1>
+        <h3 class="airpods-statement">The world's best in-ear 
+            <br> Active Noise Cancellation. </h3>
+        <div class="button-group">
+            <a class="learn-more-btn" href="#">Learn more </a>
+            <a class="shop-btn" href="#">Buy </a>
+            
+        </div>
+        <img src ="./airpod.png" alt="Airpod Image" width="300px">
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item"> 
+            <p class="airpods-header">Apple Gift Card</p>
+            <p class="airpods-statement">Let them spend the holidays
+                <br> however they like.
+            </p>
+            <div class="button-group">
+            <a class="learn-more-btn" href="#">Learn more </a>
+            <a class="shop-btn" href="#">Buy </a>
+            
+        </div>
+            <img src="./giftcard.png" alt="Gift Card Image" width="450px">
+        
+        </div>
+        <div class="flex-item"><p class="airpods-header">iPad Air</p>
+            <p class="airpods-statement"> Now supercharged by the M3 chip.</p>
+            </p>
+            <div class="button-group">
+            <a class="learn-more-btn" href="#">Learn more </a>
+            <a class="shop-btn" href="#">Buy
+                 </a>
+                 <img src="./ipad.png">
+            </div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+        <div class="flex-item">Item 5</div>
+        <div class="flex-item">Item 6</div>
     </div>
 </body>
 </html>
